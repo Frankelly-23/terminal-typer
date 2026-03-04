@@ -66,7 +66,7 @@ def main(stdscr):
         stdscr.addstr(YQUOTE, XQUOTE, replacement_str, current_color)
         stdscr.addstr(height - 3, width - 15, f"[{width}, {height}]")
         stdscr.addstr(YERRORS, XERRORS, f"Errors > {usr_errors}", RED)
-        stdscr.addstr(YHITS, XHITS, f"Hits > {usr_hits}", GREEN)
+        stdscr.addstr(YHITS, XHITS, f"Hits > {usr_hits}", GREEN | curses.A_BOLD)
         stdscr.addstr(YATTEMP, XATTEMP, f"Attemps > { usr_attempts}", GREEN)
         stdscr.refresh()
 
